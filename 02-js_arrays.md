@@ -27,6 +27,34 @@ frontendTools[1] = "Tailwind CSS";
 console.log(frontendTools); // ["HTML", "Tailwind CSS", "JavaScript"]
 ```
 
+### Array length
+
+Every array has a `.length` property that tells you how many items it holds.
+
+```javascript
+const fruits = ["apple", "banana", "mango"];
+
+console.log(fruits.length); // 3
+
+// The last item is always at index length - 1
+console.log(fruits[fruits.length - 1]); // "mango"
+```
+
+> [!NOTE]
+> If you ask for an index that doesn't exist, JavaScript gives you `undefined` instead of an error.
+> `console.log(fruits[10]); // undefined`
+
+### Arrays can hold anything
+
+Arrays aren't limited to one type of data.
+
+```javascript
+const mixed = ["Alex", 20, true, ["nested", "array"]];
+```
+
+> [!NOTE]
+> Even though the array is declared with `const`, you can still change what's inside it. `const` only stops you from reassigning the variable itself.
+
 ## Array methods: making our work easier
 
 JS gives us built-in methods (functions) for working with arrays. Here are three of the most common.
@@ -70,6 +98,23 @@ const evenNumbers = numbers.filter(function (number) {
 
 console.log(evenNumbers); // [2, 4]
 ```
+
+## Checking if an item exists
+
+Sometimes you just want to know whether a value is in an array, or where it is.
+
+```javascript
+const colors = ["red", "green", "blue"];
+
+console.log(colors.includes("green")); // true
+console.log(colors.includes("pink"));  // false
+
+console.log(colors.indexOf("blue"));   // 2
+console.log(colors.indexOf("pink"));   // -1 (not found)
+```
+
+> [!NOTE]
+> `includes()` answers yes or no (`true` / `false`). `indexOf()` tells you the position, or `-1` if the item isn't there.
 
 ## Try it yourself
 

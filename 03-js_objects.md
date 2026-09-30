@@ -51,6 +51,25 @@ car.year = 2022;
 console.log(car); // { brand: "Mahindra", model: "Thar", year: 2022 }
 ```
 
+## Nested Objects
+
+Objects can contain other objects. This is useful when you want to group related information together.
+
+```javascript
+const student = {
+  name: "Alex",
+  age: 20,
+  address: {
+    city: "Noida",
+    pincode: 201301
+  }
+};
+
+console.log(student.name);            // "Alex"
+console.log(student.address.city);    // "Noida"
+console.log(student.address.pincode); // 201301
+```
+
 ## Methods in Objects
 
 Objects can also hold functions. When a function belongs to an object, we call it a **method**.
