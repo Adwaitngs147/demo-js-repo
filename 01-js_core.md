@@ -66,10 +66,10 @@ This means: make a box called `age` and put `20` in it.
 
 ```javascript
 let score = 0;          // can change later
-score = 10;             // ✅ fine
+score = 10;             // fine
 
 const birthYear = 2005; // can never change
-birthYear = 2006;       // ❌ Error!
+birthYear = 2006;       // Error!
 ```
 
 | Keyword | Use it when |
